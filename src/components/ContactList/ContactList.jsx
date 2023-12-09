@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import css from 'components/ContactList/ContactList.module.css';
+import css from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectVisibleContacts } from 'redux/contacts/contacts.selectors';
-import { deleteContact, fetchContacts } from 'redux/contacts/operations';
-import { openModal } from 'redux/modalContactDetail/modalContactDetail.reducer';
-import ModalContactDetail from 'components/ModalContactDetail/ModalContactDetail';
-import { selectIsOpenModal } from 'redux/modalContactDetail/modalContactDetail.selectors';
+import { selectVisibleContacts } from '../../redux/contacts/contacts.selectors';
+import { deleteContact, fetchContacts } from '../../redux/contacts/operations';
+import { openModal } from '../../redux/modalContactDetail/modalContactDetail.reducer';
+import ModalContactDetail from '../ModalContactDetail/ModalContactDetail';
+import { selectIsOpenModal } from '../../redux/modalContactDetail/modalContactDetail.selectors';
 
 export const ContactList = () => {
   const dispatch = useDispatch();

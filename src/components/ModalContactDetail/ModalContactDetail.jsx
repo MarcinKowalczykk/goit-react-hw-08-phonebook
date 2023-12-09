@@ -1,8 +1,8 @@
-// import css from 'components/ContactForm/ContactForm.module.css';
-import css from 'components/ModalContactDetail/ModalContactDetail.module.css';
+
+import css from './ModalContactDetail.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { closeModal } from 'redux/modalContactDetail/modalContactDetail.reducer';
-import { selectModalData } from 'redux/modalContactDetail/modalContactDetail.selectors';
+import { closeModal } from '../../redux/modalContactDetail/modalContactDetail.reducer'
+import { selectModalData } from '../../redux/modalContactDetail/modalContactDetail.selectors';
 import icon from '../../img/icon.webp';
 const ModalContactDetail = () => {
   const dispatch = useDispatch();

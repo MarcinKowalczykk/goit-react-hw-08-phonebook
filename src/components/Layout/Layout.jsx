@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { selectAuthenticated } from 'redux/auth/auth.selectors';
-import { UserMenu } from 'components/UserMenu/UserMenu';
+import { selectAuthenticated } from '../../redux/auth/auth.selectors';
+import { UserMenu } from '../../components/UserMenu/UserMenu';
 
-import css from 'components/ContactForm/ContactForm.module.css';
+import css from '../ContactForm/ContactForm.module.css';
 
 export const Layout = ({ children }) => {
   const authenticated = useSelector(selectAuthenticated);

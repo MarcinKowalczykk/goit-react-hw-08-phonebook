@@ -1,4 +1,4 @@
-import css from 'components/ContactForm/ContactForm.module.css';
+import css from '../components/ContactForm/ContactForm.module.css';
 
 const Home = () => {
   return (

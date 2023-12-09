@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { authLogin } from 'redux/auth/operations';
-import css from 'components/ContactForm/ContactForm.module.css';
+import { authLogin } from '../redux/auth/operations';
+import css from '../components/ContactForm/ContactForm.module.css';
 import Notiflix from 'notiflix';
-import { Loader } from 'components/Loader/Loader';
+import { Loader } from '../components/Loader/Loader';
 import {
   selectAuthError,
   selectAuthIsLoading,
-} from 'redux/auth/auth.selectors';
+} from '../redux/auth/auth.selectors';
 
 const Login = () => {
   const dispatch = useDispatch();

@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { authRegister } from 'redux/auth/operations';
-import css from 'components/ContactForm/ContactForm.module.css';
+import { authRegister } from '../redux/auth/operations';
+import css from '../components/ContactForm/ContactForm.module.css';
 import {
   selectAuthError,
   selectAuthIsLoading,
-} from 'redux/auth/auth.selectors';
-import { Loader } from 'components/Loader/Loader';
+} from '../redux/auth/auth.selectors';
+import { Loader } from '../components/Loader/Loader';
 import Notiflix from 'notiflix';
 
 const Register = () => {

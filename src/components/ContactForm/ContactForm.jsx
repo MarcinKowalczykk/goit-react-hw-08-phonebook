@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Notiflix from 'notiflix';
 
-import css from 'components/ContactForm/ContactForm.module.css';
-import { selectContacts } from 'redux/contacts/contacts.selectors';
-import { addContact } from 'redux/contacts/operations';
+import css from './ContactForm.module.css';
+import { selectContacts } from '../../redux/contacts/contacts.selectors';
+import { addContact } from '../../redux/contacts/operations';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
